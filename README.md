@@ -22,3 +22,62 @@ Resampling into waveform arrays
 2. Machine Learning Models
 Small CNN regression model
 Autoencoder for curve reconstruction
+
+Repository Structure
+ecg-digitization/
+│
+├── README.md
+├── requirements.txt
+│
+├── notebooks/
+│   ├── 01_data_exploration.ipynb
+│   ├── 02_preprocessing.ipynb
+│   ├── 03_baseline_model.ipynb
+│   └── 04_inference.ipynb
+│
+├── src/
+│   ├── preprocessing.py
+│   ├── curve_extraction.py
+│   ├── model.py
+│   ├── train.py
+│   └── inference.py
+│
+├── experiments/
+│   └── experiment_log.md
+│
+└── kaggle/
+    └── placeholder.txt
+    
+Dataset
+The project uses images and ECG time-series metadata that include:
+ECG waveform images (scans, photos, degradations)
+12-lead digital ground-truth signals
+Sampling frequency
+Lead-specific signal lengths
+Metadata for training and evaluation
+(Dataset is not stored in this repo due to size.)
+
+Evaluation Metrics
+RMSE
+Dynamic Time Warping (DTW)
+R-peak alignment
+Visual overlay plots
+
+Setup
+Install dependencies:
+pip install -r requirements.txt
+Run preprocessing (example):
+python src/preprocessing.py
+
+Project Status
+ Repo initialized
+ Data exploration notebook
+ Lead-level cropping
+ Gridline removal pipeline
+ Curve extraction prototype
+ Baseline ML model
+ Evaluation suite
+ Final report + writeup
+
+License
+MIT License
