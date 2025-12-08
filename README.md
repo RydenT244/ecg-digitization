@@ -24,8 +24,8 @@ Small CNN regression model
 Autoencoder for curve reconstruction
 
 Repository Structure
+```text
 ecg-digitization/
-
 │
 ├── README.md
 ├── requirements.txt
@@ -48,7 +48,7 @@ ecg-digitization/
 │
 └── kaggle/
     └── placeholder.txt
-    
+  ```  
 Dataset
 - The project uses images and ECG time-series metadata that include:
 - ECG waveform images (scans, photos, degradations)
