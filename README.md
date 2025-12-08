@@ -71,14 +71,14 @@ Run preprocessing (example):
 python src/preprocessing.py
 
 Project Status
-- Repo initialized
-- Data exploration notebook
-- Lead-level cropping
-- Gridline removal pipeline
-- Curve extraction prototype
-- Baseline ML model
-- Evaluation suite
-- Final report + writeup
+- [ ] Repo initialized
+- [ ] Data exploration notebook
+- [ ] Lead-level cropping
+- [ ] Gridline removal pipeline
+- [ ] Curve extraction prototype
+- [ ] Baseline ML model
+- [ ] Evaluation suite
+- [ ] Final report + writeup
 
 License
 MIT License
