@@ -81,6 +81,24 @@ Metrics
 - R-peak alignment
 - Visual overlay plots
 
+## Visual Overview
+
+### Preprocessing
+Original ECG lead image → contrast enhancement → thresholding / grid suppression.
+
+![Preprocessing pipeline](images/preprocessing.png)
+
+### Curve Extraction
+Continuity-based curve tracking over the grid-suppressed mask (single y(x) trace).
+
+![Extracted curve overlay](images/curve_overlay.png)
+
+### Signal Alignment (Baseline)
+Predicted signal aligned to a best-matching ground-truth window (correlation ~0.79 on aligned window).
+
+![Alignment plot](images/final_alignment.png)
+
+
 Setup
 Install dependencies:
 pip install -r requirements.txt
